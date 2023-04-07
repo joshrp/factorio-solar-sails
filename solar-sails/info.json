@@ -1,0 +1,13 @@
+{
+  "name": "solar-sails",
+  "version": "0.1.0",
+  "factorio_version": "1.1",
+  "title": "Solar Sails",
+  "author": "Paystey",
+  "contact": "",
+  "description": "Deployable Solar Sails that provide constant free power",
+  "dependencies":
+  [
+    "base"
+  ]
+}
