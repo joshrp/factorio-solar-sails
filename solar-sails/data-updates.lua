@@ -22,5 +22,5 @@ if mods['SeaBlock'] then
   data.raw.recipe['pay:solar-sail-deployer-recipe'].category = 'crafting'
   data.raw.recipe['pay:solar-sail-recipe'].normal.ingredients = ingredients.solar_sail
 
-  data.raw.technology['pay:solar-sail-technology'].prerequisites = {'rocket-silo', 'bob-solar-energy-4'}
+  data.raw.technology['pay:solar-sail-technology'].prerequisites = {'rocket-silo', 'deuterium-fuel-cell-2', 'bob-solar-energy-3'}
 end

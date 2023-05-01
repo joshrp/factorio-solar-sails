@@ -2,3 +2,19 @@ Version: 0.1.0
 Date: 2023.04.07
   Features:
     - Initial release
+
+---------------------------------------------------------------------------------------------------
+
+Version: 0.1.1
+Date: 2023.04.07
+  Features:
+    - Update tech requirements for sea block (requires top tier of solar panels)
+
+---------------------------------------------------------------------------------------------------
+
+Version: 0.1.2
+Date: 2023.04.30
+  Features:
+    - Fixed mining a receiver gives a normal solar panel
+    - Added Deuterium fuel cell 2 as prerequisite in SeaBlock
+    - Fixed showing No Power icon when buffer empties

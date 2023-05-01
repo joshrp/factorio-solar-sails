@@ -75,13 +75,21 @@ solarReceiver['name'] = "pay:solar-sail-receiver-entity"
 solarReceiver.type = 'electric-energy-interface'
 solarReceiver.energy_production = settings.startup['pay:receiver-power'].value
 solarReceiver.gui_mode = 'none'
+solarReceiver.minable = {mining_time = 1, result = "pay:solar-sail-receiver"}
+
 solarReceiver.energy_source = {
   type = "electric",
   usage_priority = 'primary-output',
   output_flow_limit = settings.startup['pay:receiver-power'].value,
-  buffer_capacity = settings.startup['pay:receiver-power'].value
+  buffer_capacity = settings.startup['pay:receiver-power'].value,
+  render_no_power_icon = false,
 }
 solarReceiver.icon = '__solar-sails__/graphics/icon/solar-power-receiver-icon.png'
+
+solarReceiver.collision_box[1][1] = solarReceiver.collision_box[1][1] * 0.9
+solarReceiver.collision_box[2][1] = solarReceiver.collision_box[2][1] * 0.9
+solarReceiver.collision_box[1][2] = solarReceiver.collision_box[1][2] * 0.9
+solarReceiver.collision_box[2][2] = solarReceiver.collision_box[2][2] * 0.9
 
 solarReceiver.picture = {
   layers = {
@@ -151,3 +159,4 @@ data:extend{{
     time = 30
   },
 }}
+
